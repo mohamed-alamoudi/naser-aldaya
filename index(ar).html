@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ناصر الداية</title>
+    <!-- font Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style(ar).css">
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- btn top  -->
+        <button id="top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M4 14h4v7c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-7h4a1.004 1.004 0 0 0 .78-1.63l-8-9.99c-.38-.47-1.18-.47-1.56 0l-8 10A1.004 1.004 0 0 0 4 14.01Zm8-9.4 5.92 7.4H15c-.55 0-1 .45-1 1v7h-4v-7c0-.55-.45-1-1-1H6.08z">
+                </path>
+            </svg>
+        </button>
+        <!-- nav bar -->
+        <div class="btnNavShow" id="btnNavShow"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg></div>
+        <nav class="" id="showNav">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="">
+                <p>ناصر الداية</p>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="#home">المنزل</a></li>
+                    <li><a href="#about">عني</a></li>
+                    <li><a href="#services">خدمات</a></li>
+                    <li><a href="#work">عمل</a></li>
+                    <li><a href="#blog">مدونة</a></li>
+                    <li><a href="#contact">تواصل</a></li>
+                </ul>
+            </div>
+            <div class="settings">
+                <div onclick="darkMode()" id="modeToggle" class="dark">
+                    <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                        <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                    </svg>
+                    <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="22" height="22"
+                        fill="currentColor">
+                        <path
+                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="lan" onclick="switchLanguage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-translate" viewBox="0 0 16 16">
+                        <path
+                            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+                    </svg>
+                </div>
+            </div>
+            <div class="copyright">حقوق الطبع والنشر © 2025 <span>ناصر الداية</span> جميع الحقوق محفوظة</div>
+        </nav>
+        <!-- content -->
+        <div class="content">
+            <!-- home -->
+            <section id="home" class="home">
+                <div class="card">
+                    <h2>ناصر الداية</h2>
+                    <p>مطور الواجهة الأمامية</p>
+                    <div></div>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M18.07 22h.35c.47-.02.9-.26 1.17-.64l2.14-3.09c.23-.33.32-.74.24-1.14s-.31-.74-.64-.97l-4.64-3.09a1.47 1.47 0 0 0-.83-.25c-.41 0-.81.16-1.1.48l-1.47 1.59c-.69-.43-1.61-1.07-2.36-1.82-.72-.72-1.37-1.64-1.82-2.36l1.59-1.47c.54-.5.64-1.32.23-1.93L7.84 2.67c-.22-.33-.57-.57-.97-.64a1.455 1.455 0 0 0-1.13.24L2.65 4.41c-.39.27-.62.7-.64 1.17-.03.69-.16 6.9 4.68 11.74 4.35 4.35 9.81 4.69 11.38 4.69ZM6.88 10.05c-.16.15-.21.39-.11.59.05.09 1.15 2.24 2.74 3.84 1.6 1.6 3.75 2.7 3.84 2.75.2.1.44.06.59-.11l1.99-2.15 3.86 2.57-1.7 2.46c-1.16 0-6.13-.24-9.99-4.1S4 7.06 4 5.91l2.46-1.7 2.57 3.86-2.15 1.99Z">
+                                </path>
+                            </svg>
+                            +972 597 772 385
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m20,4H4c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm-8.61,10.79c.18.14.4.21.61.21s.43-.07.61-.21l1.55-1.21,4.42,4.42H5.41l4.42-4.42,1.55,1.21Zm8.61-8.79v.51s-8,6.22-8,6.22L4,6.51v-.51h16Zm0,3.04v7.54s-4.24-4.24-4.24-4.24l4.24-3.3Zm-11.76,3.3l-4.24,4.24v-7.54l4.24,3.3Zm11.76,5.66h0s0,0,0,0h0Z">
+                                </path>
+                            </svg>
+                            mohamed.7.alamoudi@gmail.com
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M16 10c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4m-6 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2">
+                                </path>
+                                <path
+                                    d="M11.42 21.81c.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8s-8 3.59-8 8c-.03 6.44 7.12 11.6 7.42 11.82M12 4c3.31 0 6 2.69 6 6 .02 4.44-4.39 8.43-6 9.74-1.61-1.31-6.02-5.29-6-9.74 0-3.31 2.69-6 6-6">
+                                </path>
+                            </svg>
+                            فلسطين غزة شارع النصر
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- about -->
+            <section id="about" class="about">
+                <div><img src="assets/images/about.jpg" alt=""></div>
+                <div>
+                    <div class="title">عني</div>
+                    <h2>ناصر الداية</h2>
+                    <p>أنا مطور واجهات أمامية بخبرة أكثر من 4 سنوات. إذا كنت تحتاج إلى تطوير مواقع متجاوبة ومتقنة البكسل
+                        ومتوافقة مع جميع المتصفحات — فأنا المطور الذي تبحث عنه.</p>
+                    <div class="card">
+                        <ul>
+                            <li><span>عيد ميلادي: </span>18 أكتوبر 2005</li>
+                            <li><span>موقعي: </span>mohamedamoudi.me</li>
+                            <li><span>هاتف: </span>+972 597 772 385</li>
+                            <li><span>دراسة: </span>الجامعة الإسلامية بغزة</li>
+                        </ul>
+                        <ul>
+                            <li><span>درجة: </span>البكالوريوس</li>
+                            <li><span>ايميل: </span>mohamed.7.alamoudi@gmail.com</li>
+                            <li><span>لينكدن: </span>@mohamed-alamoudi</li>
+                            <li><span>فريلانسر: </span>Available</li>
+                        </ul>
+                    </div>
+                    <button>تنزيل CV</button>
+                </div>
+            </section>
+            <!-- services -->
+            <section id="services" class="services">
+                <div class="title">ما أفعله</div>
+                <h2>خدمات</h2>
+                <div class="card">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 17V6c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v11c0 .37.11.7.28 1H2v2h20v-2h-1.28c.17-.3.28-.63.28-1M5 6h14v11-1H5z">
+                            </path>
+                        </svg>
+                        <h2>موقع</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">01</p>
+                    </div>
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 7h-5V3c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v8H3c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h18c.55 0 1-.45 1-1V8c0-.55-.45-1-1-1M4 13h4v7H4zm6-1V4h4v16h-4zm10 8h-4V9h4z">
+                            </path>
+                        </svg>
+                        <h2>تسويق سيو</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">02</p>
+                    </div>
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="m21.49,7.13L12.49,2.13c-.3-.17-.67-.17-.97,0L2.51,7.13c-.32.18-.51.51-.51.87s.2.7.51.87l9,5c.15.08.32.13.49.13s.33-.04.49-.13l9-5c.32-.18.51-.51.51-.87s-.2-.7-.51-.87Zm-9.49,4.73l-6.94-3.86,6.94-3.86,6.94,3.86-6.94,3.86Z">
+                            </path>
+                            <path
+                                d="m12,18c.17,0,.33-.04.49-.13l9-5-.97-1.75-8.51,4.73L3.49,11.13l-.97,1.75,9,5c.15.08.32.13.49.13Z">
+                            </path>
+                            <path
+                                d="m11.51,21.87c.15.08.32.13.49.13s.33-.04.49-.13l9-5-.97-1.75-8.51,4.73L3.49,15.13l-.97,1.75,9,5Z">
+                            </path>
+                        </svg>
+                        <h2>التجارة الإلكترونية</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">03</p>
+                    </div>
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M16 6h1v1h-1zM18 6h1v1h-1z"></path>
+                            <path
+                                d="M20 3H8c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M8 5h12v3H8zm0 10v-5h12v5z">
+                            </path>
+                            <path d="M4 21h13v-2H4V8H2v11c0 1.1.9 2 2 2"></path>
+                        </svg>
+                        <h2>التصميم الجرافيكي</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">04</p>
+                    </div>
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 2H3c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h18c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1m-1 6h-4v4h4v4h-4v4h-4v-4H8v4H4v-4h4v-4H4V8h4V4h4v4h4V4h4z">
+                            </path>
+                            <path d="M8 8h4v4H8zM12 12h4v4h-4z"></path>
+                        </svg>
+                        <h2>التسويق الرقمي</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">05</p>
+                    </div>
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M8 11A1 1 0 1 0 8 13 1 1 0 1 0 8 11z"></path>
+                            <path d="M12 11A1 1 0 1 0 12 13 1 1 0 1 0 12 11z"></path>
+                            <path d="M16 11A1 1 0 1 0 16 13 1 1 0 1 0 16 11z"></path>
+                            <path
+                                d="m12,2C6.49,2,2,6.49,2,12c0,2.12.68,4.19,1.93,5.9l-1.75,2.53c-.21.31-.24.7-.06,1.03.17.33.51.54.89.54h9c5.51,0,10-4.49,10-10S17.51,2,12,2Zm0,18h-7.09l1.09-1.57c.26-.37.23-.88-.06-1.22-1.25-1.45-1.93-3.3-1.93-5.21,0-4.41,3.59-8,8-8s8,3.59,8,8-3.59,8-8,8Z">
+                            </path>
+                        </svg>
+                        <h2>وسائل التواصل الاجتماعي</h2>
+                        <div></div>
+                        <p class="doc">
+                            أقوم بتطوير مواقع ويب حديثة ومتجاوبة تتميز بالأداء العالي والتصميم الجذاب لتحقيق أفضل تجربة
+                            مستخدم.
+                        </p>
+                        <p class="number">06</p>
+                    </div>
+                </div>
+            </section>
+            <!-- work -->
+            <section id="work" class="work">
+                <div class="title">اخر اعمالي</div>
+                <h2>معرض الاعمال</h2>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.01</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work1.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.02</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.03</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work3.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.04</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work4.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.05</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work5.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h2>العمل P.06</h2>
+                            <div></div>
+                            <p>تصميم الكتب، أدوبي إكس دي، فوتوشوب، فيجما</p>
+                        </div>
+                        <img src="assets/images/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- blog -->
+            <section id="blog" class="blog">
+                <div class="title">الاعمال الاخيرة</div>
+                <h2>معرض العمل</h2>
+                <div class="card">
+                    <div class="box">
+                        <div class="img">
+                            <img src="assets/images/blog1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="time"><span>تصميم الويب - </span>18 ديسمبر 2024</p>
+                            <p class="doc">احذر أيها المطور من أعراض الإرهاق هذه</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="assets/images/blog2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="time"><span>تصميم الويب - </span>18 ديسمبر 2024</p>
+                            <p class="doc">احذر أيها المطور من أعراض الإرهاق هذه</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="assets/images/blog3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="time"><span>تصميم الويب - </span>18 ديسمبر 2024</p>
+                            <p class="doc">احذر أيها المطور من أعراض الإرهاق هذه</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="assets/images/blog4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="time"><span>تصميم الويب - </span>18 ديسمبر 2024</p>
+                            <p class="doc">احذر أيها المطور من أعراض الإرهاق هذه</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact -->
+            <section id="contact" class="contact">
+                <div class="title">تواصل معنا</div>
+                <h2>اتصل بي</h2>
+                <div class="card">
+                    <div class="box">
+                        <h2>دعونا نصنع المستقبل</h2>
+                        <p>أنا متاح للتعاون والعمل معًا، ويسعدني أن أسمع منك عن مشاريع جديدة.</p>
+                        <ul>
+                            <li><a href="https://wa.me/+972597772385">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M18.07 22h.35c.47-.02.9-.26 1.17-.64l2.14-3.09c.23-.33.32-.74.24-1.14s-.31-.74-.64-.97l-4.64-3.09a1.47 1.47 0 0 0-.83-.25c-.41 0-.81.16-1.1.48l-1.47 1.59c-.69-.43-1.61-1.07-2.36-1.82-.72-.72-1.37-1.64-1.82-2.36l1.59-1.47c.54-.5.64-1.32.23-1.93L7.84 2.67c-.22-.33-.57-.57-.97-.64a1.455 1.455 0 0 0-1.13.24L2.65 4.41c-.39.27-.62.7-.64 1.17-.03.69-.16 6.9 4.68 11.74 4.35 4.35 9.81 4.69 11.38 4.69ZM6.88 10.05c-.16.15-.21.39-.11.59.05.09 1.15 2.24 2.74 3.84 1.6 1.6 3.75 2.7 3.84 2.75.2.1.44.06.59-.11l1.99-2.15 3.86 2.57-1.7 2.46c-1.16 0-6.13-.24-9.99-4.1S4 7.06 4 5.91l2.46-1.7 2.57 3.86-2.15 1.99Z">
+                                        </path>
+                                    </svg>
+                                    +972 597 772 385
+                                </a></li>
+                            <li><a href="mailto:mohamed.7.alamoudi@gmail.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="m20,4H4c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm-8.61,10.79c.18.14.4.21.61.21s.43-.07.61-.21l1.55-1.21,4.42,4.42H5.41l4.42-4.42,1.55,1.21Zm8.61-8.79v.51s-8,6.22-8,6.22L4,6.51v-.51h16Zm0,3.04v7.54s-4.24-4.24-4.24-4.24l4.24-3.3Zm-11.76,3.3l-4.24,4.24v-7.54l4.24,3.3Zm11.76,5.66h0s0,0,0,0h0Z">
+                                        </path>
+                                    </svg>
+                                    mohamed.7.alamoudi@gmail.com
+                                </a></li>
+                            <li><a href="mohamedamoudi.me">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path class="b"
+                                            d="m9.88,18.36c-1.17,1.17-3.07,1.17-4.24,0-1.17-1.17-1.17-3.07,0-4.24l2.83-2.83-1.41-1.41-2.83,2.83c-1.95,1.95-1.95,5.12,0,7.07.97.97,2.25,1.46,3.54,1.46s2.56-.49,3.54-1.46l2.83-2.83-1.41-1.41-2.83,2.83Z">
+                                        </path>
+                                        <path class="b"
+                                            d="m12.71,4.22l-2.83,2.83,1.41,1.41,2.83-2.83c1.17-1.17,3.07-1.17,4.24,0,1.17,1.17,1.17,3.07,0,4.24l-2.83,2.83,1.41,1.41,2.83-2.83c1.95-1.95,1.95-5.12,0-7.07-1.95-1.95-5.12-1.95-7.07,0Z">
+                                        </path>
+                                    </svg>
+                                    mohamedamoudi.me
+                                </a></li>
+                            <li><a href="Palestine Gaza, Elnaser Street">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M16 10c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4m-6 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2">
+                                        </path>
+                                        <path
+                                            d="M11.42 21.81c.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8s-8 3.59-8 8c-.03 6.44 7.12 11.6 7.42 11.82M12 4c3.31 0 6 2.69 6 6 .02 4.44-4.39 8.43-6 9.74-1.61-1.31-6.02-5.29-6-9.74 0-3.31 2.69-6 6-6">
+                                        </path>
+                                    </svg>
+                                    فلسطين غزة شارع النصر
+                                </a></li>
+                        </ul>
+                    </div>
+                    <form>
+                        <div>
+                            <input class="name" type="text" placeholder="الاسم">
+                            <input class="email" type="text" placeholder="الايميل">
+                        </div>
+                        <textarea placeholder="رسالة"></textarea>
+                        <button type="submit">ارسال</button>
+                    </form>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="copyright">جميع الحقوق محفوظة ©2025 ناصر الداية</div>
+                <div class="icons">
+                    <a href="mailto:mohamed.7.alamoudi@gmail.com"> <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="m20,4H4c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm-8.61,10.79c.18.14.4.21.61.21s.43-.07.61-.21l1.55-1.21,4.42,4.42H5.41l4.42-4.42,1.55,1.21Zm8.61-8.79v.51s-8,6.22-8,6.22L4,6.51v-.51h16Zm0,3.04v7.54s-4.24-4.24-4.24-4.24l4.24-3.3Zm-11.76,3.3l-4.24,4.24v-7.54l4.24,3.3Zm11.76,5.66h0s0,0,0,0h0Z">
+                            </path>
+                        </svg></a>
+                    <a href="mohamedamoudi.me"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path class="b"
+                                d="m9.88,18.36c-1.17,1.17-3.07,1.17-4.24,0-1.17-1.17-1.17-3.07,0-4.24l2.83-2.83-1.41-1.41-2.83,2.83c-1.95,1.95-1.95,5.12,0,7.07.97.97,2.25,1.46,3.54,1.46s2.56-.49,3.54-1.46l2.83-2.83-1.41-1.41-2.83,2.83Z">
+                            </path>
+                            <path class="b"
+                                d="m12.71,4.22l-2.83,2.83,1.41,1.41,2.83-2.83c1.17-1.17,3.07-1.17,4.24,0,1.17,1.17,1.17,3.07,0,4.24l-2.83,2.83,1.41,1.41,2.83-2.83c1.95-1.95,1.95-5.12,0-7.07-1.95-1.95-5.12-1.95-7.07,0Z">
+                            </path>
+                        </svg></a>
+                    <a href="https://www.instagram.com/m7_hamooda/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                            </path>
+                        </svg></a>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+    <!-- link js -->
+    <script src="assets/js/index.js"></script>
+    <script>
+        // Language
+        function switchLanguage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
