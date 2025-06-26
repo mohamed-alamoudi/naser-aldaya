@@ -216,7 +216,6 @@ nav .links li:hover a {
     height: 100vh;
     background-image: url(../images/home.jpg);
     background-size: cover;
-    background-position: right;
 
     .card {
         position: absolute;
@@ -592,7 +591,7 @@ footer {
         flex-wrap: wrap-reverse;
 
         div {
-            width: 100%;
+            width: 90%;
         }
 
         .card {
@@ -637,10 +636,14 @@ footer {
         padding: 80px 50px !important;
     }
 
-    .content .home .card {
-        width: 350px;
-        right: 40px;
-        bottom: 5%;
+    .content .home {
+        background-position: center;
+
+        .card {
+            width: 350px;
+            right: 40px;
+            bottom: 5%;
+        }
     }
 
     .content .services .card .box,
